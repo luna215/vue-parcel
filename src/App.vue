@@ -1,14 +1,22 @@
 <template>
   <div>
-    <h3>{{ data }}</h3>
+    <Login />
+    <Footer />
   </div>
 </template>
 
 <script>
+
+import Login from './pages/Login';
+import Footer from './components/Footer'
+
 export default {
+  components: {
+    Login,
+    Footer,
+  },
   data() {
     return {
-      data: 'Welcome to parcel bundler'
     }
   }
 }
